@@ -31,11 +31,12 @@ const Home = () => {
     <>
       <Menu />
       <SectionOne>
-        <div>
+        <div className="content">
           Oferecemos a maior linha de
           equipamentos
           para a sua empresa
         </div>
+        <div className="flex" />
       </SectionOne>
 
       <QuemSomos>

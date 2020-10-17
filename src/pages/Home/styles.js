@@ -13,31 +13,37 @@ export const Section = styled.section`
 export const SectionOne = styled(Section)`
     background-color: #1E3E59;
     width: 100%;
-    min-height: 80vh;
-    display: block;
+    min-height: 100vh;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: row;
 
-    div{
-      background: rgba(0, 0, 0, 0.25);
+    div.content{
+      background: rgba(0, 0, 0, 0.45);
       max-width: max(40vw, 300px);
-      position: absolute;
-      top: 40%;
-      -ms-transform: translateY(-40%);
-      transform: translateY(-40%);
-      margin-left: 48px;
-      padding: 25px;
+      padding: 20px 50px;
       color: #B0C4DE;
       font-size: 2rem;
       text-align: center;
-  }
+      margin-left: 40px;
+      filter: drop-shadow(-4px 6px 20px rgba(255,255,255,0.2));
+    }
+
+    div.flex{
+      display: flex;
+      flex: 1;
+    }
 
     &:before{
       content: '';
+      position: absolute;
       background-image: url(${sectionOneImage});
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       width: 100%;
-      min-height: 80vh;
+      min-height: 100vh;
       display: block;
       mix-blend-mode: overlay;
 }

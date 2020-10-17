@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+  position: absolute;
+  background: #1E3E59;
+  width: 100%;
+  display: block;
+  z-index: 2;
+  
   nav{
   display: flex;
   justify-content: space-between;
