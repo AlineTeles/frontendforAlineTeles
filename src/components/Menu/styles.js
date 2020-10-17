@@ -6,7 +6,7 @@ export const Container = styled.header`
   width: 100%;
   display: block;
   z-index: 2;
-  
+
   nav{
   display: flex;
   justify-content: space-between;
